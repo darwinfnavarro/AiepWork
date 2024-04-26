@@ -1,8 +1,9 @@
 public class Observer1  implements Observer{
-    @Override
-    public void update() {
 
-        System.out.println("Ejemplo observer 1 creado");
+    @Override
+    public void update(double tasaInteres) {
+
+        System.out.println("Credito creado con tasa de interes del " + tasaInteres + "%");
 
     }
 }

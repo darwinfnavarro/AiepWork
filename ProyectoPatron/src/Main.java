@@ -6,9 +6,9 @@ public class Main {
         observable.addObserver(new Observer1());
         observable.addObserver(new Observer1());
 
-        observable.notifyObserver();
+        observable.setTasaInteres(4.5);
+        observable.setTasaInteres(8.3);
 
-        System.out.println(observable.observerSet);
 
 
     }

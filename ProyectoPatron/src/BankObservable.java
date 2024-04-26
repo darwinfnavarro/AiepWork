@@ -5,6 +5,9 @@ public class BankObservable implements Observable {
 
     Set <Observer> observerSet = new HashSet<>();
 
+    protected double tasaInteres = 3.1;
+
+
 
     @Override
     public void addObserver(Observer o) {
@@ -25,9 +28,18 @@ public class BankObservable implements Observable {
 
         for (Observer observer: observerSet){
 
-            observer.update();
+            observer.update(tasaInteres);
 
         }
 
+    }
+
+    public void setTasaInteres(double tasaInteres) {
+        this.tasaInteres = tasaInteres;
+        notifyObserver();
+    }
+
+    public double getTasaInteres() {
+        return tasaInteres;
     }
 }
