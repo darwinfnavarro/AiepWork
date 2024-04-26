@@ -32,7 +32,7 @@ public class BankObservable implements Observable {
         this.interestRate_dngd = interestRate;
     }
 
-    public double getTasaInteres() {
+    public double getTasaInteres_dngd() {
         return interestRate_dngd;
     }
 

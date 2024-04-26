@@ -1,4 +1,4 @@
-public class Observer1 implements Observer{
+public class CreditObserver implements Observer {
 
     @Override
     public void update(double interestRate, double amount) {

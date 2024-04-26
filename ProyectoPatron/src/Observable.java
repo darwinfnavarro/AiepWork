@@ -6,6 +6,4 @@ public interface Observable {
 
     void notifyObserver_dngd();
 
-
-
 }
