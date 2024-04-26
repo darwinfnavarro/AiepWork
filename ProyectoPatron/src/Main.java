@@ -5,14 +5,22 @@ public class Main {
         
         bank_dngd.addObserver_dngd(new CreditObserver());
 
+        bank_dngd.setInterestRate_dngd(15);
+
+        bank_dngd.addNewAmount_dngd(50);
+        bank_dngd.addNewAmount_dngd(375);
+        bank_dngd.addNewAmount_dngd(500);
+
         bank_dngd.setInterestRate_dngd(4.5);
-        bank_dngd.addNewAmount_dngd(200000);
 
-        bank_dngd.setInterestRate_dngd(8.3);
-        bank_dngd.addNewAmount_dngd(50000);
+        bank_dngd.addNewAmount_dngd(10000);
+        bank_dngd.addNewAmount_dngd(25000);
 
-        bank_dngd.setInterestRate_dngd(2.3);
-        bank_dngd.addNewAmount_dngd(28492);
+
+        bank_dngd.setInterestRate_dngd(7.35);
+
+        bank_dngd.addNewAmount_dngd(5500);
+        bank_dngd.addNewAmount_dngd(8730);
 
     }
 }
