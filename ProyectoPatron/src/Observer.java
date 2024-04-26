@@ -1,4 +1,4 @@
 public interface Observer {
 
-    void update(double tasaInteres);
+    void update(double interestRate, double amount);
 }

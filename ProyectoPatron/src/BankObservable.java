@@ -3,43 +3,42 @@ import java.util.Set;
 
 public class BankObservable implements Observable {
 
-    Set <Observer> observerSet = new HashSet<>();
+    Set <Observer> observerSet_dngd = new HashSet<>();
 
-    protected double tasaInteres = 3.1;
-
+    protected double interestRate_dngd = 0;
+    protected double amount_dngd = 0;
 
 
     @Override
-    public void addObserver(Observer o) {
-
-        observerSet.add(o);
-
+    public void addObserver_dngd(Observer o) {
+        observerSet_dngd.add(o);
     }
 
     @Override
-    public void deleteObserver(Observer o) {
-
-        observerSet.remove(o);
-
+    public void deleteObserver_dngd(Observer o) {
+        observerSet_dngd.remove(o);
     }
 
     @Override
-    public void notifyObserver() {
+    public void notifyObserver_dngd() {
 
-        for (Observer observer: observerSet){
-
-            observer.update(tasaInteres);
-
+        for (Observer observer: observerSet_dngd){
+            observer.update(interestRate_dngd, amount_dngd);
         }
 
     }
 
-    public void setTasaInteres(double tasaInteres) {
-        this.tasaInteres = tasaInteres;
-        notifyObserver();
+    public void setInterestRate_dngd(double interestRate) {
+        this.interestRate_dngd = interestRate;
     }
 
     public double getTasaInteres() {
-        return tasaInteres;
+        return interestRate_dngd;
     }
+
+    public void addNewAmount_dngd(double amount) {
+        this.amount_dngd = amount;
+        notifyObserver_dngd();
+    }
+
 }

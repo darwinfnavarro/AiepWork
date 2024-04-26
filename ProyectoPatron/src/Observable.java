@@ -1,10 +1,10 @@
 public interface Observable {
 
-    void addObserver(Observer o);
+    void addObserver_dngd(Observer o);
 
-    void deleteObserver(Observer o);
+    void deleteObserver_dngd(Observer o);
 
-    void notifyObserver();
+    void notifyObserver_dngd();
 
 
 
