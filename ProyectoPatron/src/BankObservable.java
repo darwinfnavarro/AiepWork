@@ -30,6 +30,8 @@ public class BankObservable implements Observable {
 
     public void setInterestRate_dngd(double interestRate) {
         this.interestRate_dngd = interestRate;
+        notifyObserver_dngd();
+
     }
 
     public double getTasaInteres_dngd() {
@@ -38,7 +40,6 @@ public class BankObservable implements Observable {
 
     public void addNewAmount_dngd(double amount) {
         this.amount_dngd = amount;
-        notifyObserver_dngd();
     }
 
 }

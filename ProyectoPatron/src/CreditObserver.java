@@ -10,7 +10,7 @@ public class CreditObserver implements Observer {
         double totalInterest = amount * (interestRate/100);
         double total = amount + totalInterest;
 
-        System.out.println("Nuevo credito registrado");
+        System.out.println("Cotizacion de credito con: " + amount + " con " + "tasa de interes de: " + interestRate + "%"  );
 
         System.out.println("Monto solicitado: " + amount);
         System.out.println("Tasa de interes: " + interestRate + "%");
